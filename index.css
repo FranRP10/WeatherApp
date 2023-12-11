@@ -1,0 +1,146 @@
+*{
+    font-family: 'Varela Round', sans-serif;
+    padding: 0 ;
+    box-sizing: border-box ;
+    margin: 0 ;
+}
+
+body{
+    background-color: #3c4d8a;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+
+}
+
+.contenedor{
+    position: relative;
+    height: 550px;
+    width: 400px;
+    padding: 20px;
+    border-radius: 15px ;
+    color: #FFF;
+    background: #181e3b;
+}
+
+.CajaBusqueda{
+    display: flex;
+    align-items: center;
+    height: 50px;
+    width: 100%;
+    
+    position: relative;
+}
+
+.busqueda-input{
+    position: absolute;
+    height: 100% ;
+    width: 100%;
+    outline: none;
+    border: 3px solid #3c4d8a;
+    color: white;
+    font-weight: 400;
+    font-size: 20px;
+    text-transform: uppercase;
+    background: transparent;
+    padding: 0 50px 0 40px;
+}
+.busqueda-input::placeholder{
+    color: #a3b8fa;
+}
+
+.CajaBusqueda button{
+    color: white;
+    padding: 0 45px 0  10px;
+    font-size: 30px;
+    height: 100%;
+    width: 45px;
+    background: transparent;
+    position: absolute;
+    right: 0;   
+    cursor: pointer;
+    border: none;
+    outline: none;
+}
+
+.CajaBusqueda i{
+    position: absolute;
+    font-size: 30px ;
+    left: 10px;
+    
+}
+
+.CajaDelTiempo img{
+    width: 60%;
+}
+.CajaDelTiempo{
+    text-align: center;
+    margin: 40px ;
+}
+
+.CajaDelTiempo .temperature{
+    font-size: 60px;
+    position: relative;
+    font-weight: 700;
+    line-height: 1;
+    margin: 20px 0 5px ;
+}
+
+.CajaDelTiempo .temperature span{
+font-size: 25px;
+margin-left: 5px ;
+position: absolute;
+}
+.CajaDelTiempo .description{
+    text-transform: capitalize;
+    font-weight: 400;
+    font-size: 25px;
+    
+}
+
+.DetallesTemporales{
+    display: flex;
+    position: absolute;
+    padding: 0 20px;
+    bottom: 40px;
+    width: 100%;
+    
+}
+
+.DetallesTemporales .humidity{
+    display: flex;
+    align-items: center;
+    width: 50%;
+    
+}
+.DetallesTemporales .wind{
+    display: flex;
+    align-items: center;
+    width: 50%;
+}
+
+.DetallesTemporales i{
+    font-size: 55px;
+    margin-right: 10px;
+}
+
+.DetallesTemporales span{
+    display: inline-block;
+    font-size: 20px;
+    font-weight: 400;
+}
+.DetallesTemporales p{
+    font-size: 15px;
+    font-weight: 500;
+}
+
+@media only screen and (max-width: 600px){
+    .DetallesTemporales{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+       
+    }
+}
